@@ -1,28 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-    <Title>Simple and easy to use encryption algorithm</Title>
-    <Copyright>Andrea Bruno</Copyright>
-    <Description>Strong encryption algorithm, and simple to use. Accepts keys and data packets of any length.</Description>
-    <PackageProjectUrl>https://github.com/Andrea-Bruno/EncryptionAlgorithm</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/Andrea-Bruno/EncryptionAlgorithm</RepositoryUrl>
-    <PackageTags>encryption;decryption;file encryption;binary encryption;text encryption;obfuscation</PackageTags>
-    <PackageLicenseFile>gpl-3.0.txt</PackageLicenseFile>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Version>$([System.DateTime]::Now.ToString("1.yy.MM.dd"))</Version>
+		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<Title>Simple and easy to use encryption algorithm</Title>
+		<Copyright>Andrea Bruno</Copyright>
+		<Description>Strong encryption algorithm, and simple to use. Accepts keys and data packets of any length.</Description>
+		<PackageProjectUrl>https://github.com/Andrea-Bruno/EncryptionAlgorithm</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/Andrea-Bruno/EncryptionAlgorithm</RepositoryUrl>
+		<PackageTags>encryption;decryption;file encryption;binary encryption;text encryption;obfuscation</PackageTags>
+		<PackageLicenseFile>gpl-3.0.txt</PackageLicenseFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Update="gpl-3.0.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Update="gpl-3.0.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 	<Target Name="SetPackageVersion" DependsOnTargets="Build">
 		<PropertyGroup>
