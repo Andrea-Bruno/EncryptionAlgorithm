@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>EncryptionAlgorithm</RootNamespace>
+    <Title>Simple and easy to use encryption algorithm</Title>
+    <Copyright>Andrea Bruno</Copyright>
+    <Description>Strong encryption algorithm, and simple to use. Accepts keys and data packets of any length.</Description>
+  </PropertyGroup>
+
+</Project>
