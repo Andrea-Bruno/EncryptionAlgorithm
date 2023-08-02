@@ -1,10 +1,14 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace EncryptionAlgorithm
 {
+    /// <summary>
+    /// Access to encryption features
+    /// </summary>
     public static class Perform
     {
         /// <summary>
@@ -76,7 +80,7 @@ namespace EncryptionAlgorithm
         {
             using (HashAlgorithm algorithm = SHA256.Create())
             {
-                var hash = algorithm.ComputeHash(Encoding.UTF8.GetBytes(seed));
+                var hash = algorithm.ComputeHash(Encoding.UTF8.GetBytes(seed).Concat(BitConverter.GetBytes(size)).ToArray()); // Generate a 32 bit seed
                 var hl = hash.Length;
                 var parts = (int)Math.Ceiling((double)size / hl);
                 byte[] b = new byte[parts * hl];
