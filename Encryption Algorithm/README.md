@@ -11,6 +11,7 @@ Very effective and powerful encryption algorithm, easy to use (only one command 
 - File encryption
 - Text encryption
 - Encryption of binary data
+- Protection against brute force attacks
 
 Source code:
 https://github.com/Andrea-Bruno/EncryptionAlgorithm
