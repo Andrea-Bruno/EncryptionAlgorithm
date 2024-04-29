@@ -7,13 +7,17 @@
 		<Title>Simple and easy to use encryption algorithm</Title>
 		<Copyright>Andrea Bruno</Copyright>
 		<Description>Strong encryption algorithm, and simple to use. Accepts keys and data packets of any length.</Description>
-		<PackageProjectUrl>https://github.com/Andrea-Bruno/EncryptionAlgorithm</PackageProjectUrl>
+		<PackageProjectUrl>https://www.nuget.org/packages/EncryptionAlgorithm/</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/Andrea-Bruno/EncryptionAlgorithm</RepositoryUrl>
 		<PackageTags>encryption;decryption;file encryption;binary encryption;text encryption;obfuscation</PackageTags>
 		<PackageLicenseFile>gpl-3.0.txt</PackageLicenseFile>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="AntiBruteForce" Version="1.24.4.29" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<None Update="gpl-3.0.txt">
