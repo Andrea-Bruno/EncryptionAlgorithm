@@ -9,7 +9,7 @@ namespace EncryptionAlgorithm
     /// <summary>
     /// Access to encryption features
     /// </summary>
-    public static class Perform
+    public static class Perform 
     {
         /// <summary>
         /// Decrypt encrypted text
