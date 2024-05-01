@@ -16,7 +16,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="AntiBruteForce" Version="1.24.4.29" />
+	  <PackageReference Include="AntiBruteForce" Version="1.24.5.1" />
 	</ItemGroup>
 
 	<ItemGroup>
