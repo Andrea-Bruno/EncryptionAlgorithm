@@ -36,8 +36,12 @@ Very effective and powerful encryption algorithm, easy to use (only one command 
     Console.WriteLine("Clear data = " + clearData.Txt());
 ```
 
-Source code:
+### Source code:
 https://github.com/Andrea-Bruno/EncryptionAlgorithm
 
-Demonstration and example usage from code:
+### Demonstration and example usage from code:
 https://github.com/Andrea-Bruno/EncryptionAlgorithm/blob/master/Encryption%20Usage%20Test/Program.cs
+
+### Support against brute force attacks
+Protection against brute force attacks has been implemented using open source algorithms that can be inspected by academics and cryptography experts
+Source code of protection against brute force attacks: https://github.com/Andrea-Bruno/AntiBruteForce
