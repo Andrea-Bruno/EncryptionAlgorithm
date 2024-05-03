@@ -14,7 +14,7 @@ Very effective and powerful encryption algorithm, easy to use (only one command 
 - Protection against brute force attacks
 
 ## Example of use
-```charp
+```csharp
     var password = "12345678";
 
     // Example of encryption and decryption of a text
